@@ -7,7 +7,9 @@
 
 Примеры
 ["Hello", "2", "world", ":)"] -> ["2", ":)']
+
 ["1234", "1567", "-2", "computer sciense"] -> ["2"]
+
 ["Russia", "Denmark", "Kazan"] -> []
 
 
