@@ -20,8 +20,7 @@ string[] secondArray(string[] array)
         if (array[i].Length <= 3) // ищет в массиве строки, длина которых меньшек либо равна 3 символа
         {          
             length = arrayB.Length;  //Мы используем Array.Resize для замены большого массива на меньший.
-            Array.Resize(ref arrayB, length + 1); // ref передаем аргумент по ссылке     
-            // соединяем составные части, в итоге формируем массив resultArray.Length                                        
+            Array.Resize(ref arrayB, length + 1); // ref передаем аргумент по ссылке                                           
             arrayB[j] = array[i]; //передаем значения найденных элементов из старого в новый массив
             j++;  //переходим к следующему элементу массива          
         }    
