@@ -9,18 +9,18 @@
 ["Russia", "Denmark", "Kazan"] -> []
 */
 
-string[] array = { "Hello", "2", "world", ":)" };
+string[] array = { "Hello", "2", "world", ":)"};
 string[] secondArray(string[] array)
 {
     string[] arrayB = new string[0];  //Создаем новый пустой массив
     int j = 0; // индекс элементов нового массива
-    int length; // длина нового массива
     for (int i = 0; i < array.Length; i++)
     {            
         if (array[i].Length <= 3) // ищет в массиве строки, длина которых меньшек либо равна 3 символа
         {          
-            length = arrayB.Length;  //Мы используем Array.Resize для замены большого массива на меньший.
-            Array.Resize(ref arrayB, length + 1); // ref передаем аргумент по ссылке                                           
+             //Мы используем Array.Resize для замены большого массива на меньший.                    
+            Array.Resize(ref arrayB, arrayB.Length + 1);   // ref передаем аргумент по ссылке  
+            //увеличиваем длину массива во время выполнения                                 
             arrayB[j] = array[i]; //передаем значения найденных элементов из старого в новый массив
             j++;  //переходим к следующему элементу массива          
         }    
