@@ -12,7 +12,7 @@
 string[] array = { "Hello", "2", "world", ":)" };
 string[] secondArray(string[] array)
 {
-    string[] arrayB = new string[0]; //Создаем новый пустой массив
+    string[] arrayB = new string[0];  //Создаем новый пустой массив
     int j = 0; // индекс элементов нового массива
     int length; // длина нового массива
     for (int i = 0; i < array.Length; i++)
